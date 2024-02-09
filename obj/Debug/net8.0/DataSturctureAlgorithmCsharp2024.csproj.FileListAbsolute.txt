@@ -1,0 +1,14 @@
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\bin\Debug\net8.0\DataSturctureAlgorithmCsharp2024.exe
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\bin\Debug\net8.0\DataSturctureAlgorithmCsharp2024.deps.json
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\bin\Debug\net8.0\DataSturctureAlgorithmCsharp2024.runtimeconfig.json
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\bin\Debug\net8.0\DataSturctureAlgorithmCsharp2024.dll
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\bin\Debug\net8.0\DataSturctureAlgorithmCsharp2024.pdb
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.AssemblyInfoInputs.cache
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.AssemblyInfo.cs
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.csproj.CoreCompileInputs.cache
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.dll
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\refint\DataSturctureAlgorithmCsharp2024.dll
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.pdb
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.genruntimeconfig.cache
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\ref\DataSturctureAlgorithmCsharp2024.dll
