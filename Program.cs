@@ -8,7 +8,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        string fineName = @"E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\wordList.txt";
+        string fineName = @"E:\.NET WORKSPACE-1\Websites1\2023\DataStructureAlgorithmCsharp2024\wordList.txt";
         try
         {
             List<string> words = File.ReadAllText(fineName)
