@@ -12,3 +12,4 @@ E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\ne
 E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.pdb
 E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.genruntimeconfig.cache
 E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\ref\DataSturctureAlgorithmCsharp2024.dll
+E:\.NET WORKSPACE-1\Websites1\2023\DataSturctureAlgorithmCsharp2024\obj\Debug\net8.0\DataSturctureAlgorithmCsharp2024.sourcelink.json
