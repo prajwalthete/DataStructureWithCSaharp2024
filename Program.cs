@@ -1,1 +1,1 @@
-﻿Console.WriteLine("GTTING STARTED DS");
+﻿Console.WriteLine("GETTING STARTED DS");
