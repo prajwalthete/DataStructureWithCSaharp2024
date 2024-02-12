@@ -8,7 +8,7 @@
         {
             if (IsPrime(num))
             {
-                Console.Write(num + " ");
+                Console.WriteLine(num + " ");
             }
         }
     }
