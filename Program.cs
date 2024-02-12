@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
-namespace a;
+﻿namespace a;
 class Program
 {
     static void Main(string[] args)
     {
-        string fineName = @"E:\.NET WORKSPACE-1\Websites1\2023\DataStructureAlgorithmCsharp2024\wordList.txt";
+        // string fileName = @"E:\.NET WORKSPACE-1\Websites1\2023\DataStructureAlgorithmCsharp2024\wordList.txt";
+        string fileName1 = "wordList.txt";
+
         try
         {
-            List<string> words = File.ReadAllText(fineName)
+            List<string> words = File.ReadAllText(fileName1)
                                     .Split(new char[] { ' ', '\n', '\r', '\t' }, StringSplitOptions.RemoveEmptyEntries)
                                     .Select(word => word.Trim().ToLower())
                                     .ToList();
@@ -28,7 +25,7 @@ class Program
             Console.WriteLine("Enter a word to search: ");
             string searchWord = Console.ReadLine().Trim().ToLower(); // Trim and convert to lowercase
 
-            int index = BinarySearch1(words, searchWord);
+            int index = BinarySearch(words, searchWord);
 
 
             if (index >= 0)
@@ -46,6 +43,8 @@ class Program
         }
     }
 
+
+    //Using Compare method 
     public static int BinarySearch(List<string> words, string searchWord)
     {
         int low = 0;
@@ -75,6 +74,8 @@ class Program
     }
 
 
+
+    // using Equals Method
     public static int BinarySearch1(List<string> words, string searchWord)
     {
         int left = 0;
@@ -100,6 +101,8 @@ class Program
 
         return -1; // Word not found
     }
+
+
 
 
 }
