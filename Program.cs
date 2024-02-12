@@ -1,76 +1,110 @@
-﻿class Program
+﻿
+public class Stack
+{
+    private int[] arr;
+    private int top;
+
+
+    public Stack(int size)
+    {
+        arr = new int[size];
+        top = -1;
+
+    }
+    public void Push(int value)
+    {
+        if (IsFull())
+        {
+            throw new InvalidOperationException("Stack is Full.");
+
+        }
+        top++;
+        arr[top] = value;
+    }
+    public void Pop()
+    {
+        if (IsEmpty())
+        {
+            throw new InvalidOperationException("Stack is Empty.");
+        }
+        top--;
+    }
+    public int Peek()
+    {
+        if (IsEmpty())
+        {
+            throw new InvalidOperationException("Stack is Empty");
+        }
+        return arr[top];
+    }
+    public bool IsFull()
+    {
+        return (top == arr.Length - 1);
+    }
+    public bool IsEmpty()
+    {
+        return top == -1;
+    }
+
+
+}
+
+class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Prime numbers between 0 and 1000 that are anagrams and palindromes:");
-
-        for (int num = 0; num <= 1000; num++)
+        Stack s = new(5);
+        int choice, val;
+        do
         {
-            if (IsPrime(num))
+            Console.WriteLine("\n0. Exit\n1. Push\n2. Pop\n3. Peek\nEnter choice: ");
+            choice = Convert.ToInt32(Console.ReadLine());
+
+            switch (choice)
             {
-                if (IsAnagram(num) && IsPalindrome(num))
-                {
-                    Console.WriteLine(num + " ");
-                }
+                case 1: // push
+                    try
+                    {
+                        Console.Write("Enter value to push: ");
+                        val = Convert.ToInt32(Console.ReadLine());
+                        s.Push(val);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    break;
+                case 2:// pop
+                    try
+                    {
+                        val = s.Peek();
+                        s.Pop();
+                        Console.WriteLine("Popped: " + val);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    break;
+                case 3: // peek
+                    try
+                    {
+                        val = s.Peek();
+                        Console.WriteLine("Peek: " + val);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    break;
+
+
+
+                default:
+                    break;
             }
-        }
-    }
 
-    static bool IsPrime(int number)
-    {
-        if (number <= 1)
-        {
-            return false;
-        }
 
-        if (number == 2 || number == 3)
-        {
-            return true;
-        }
-
-        if (number % 2 == 0)
-        {
-            return false;
-        }
-
-        int sqrt = (int)Math.Sqrt(number);
-
-        for (int i = 3; i <= sqrt; i += 2)
-        {
-            if (number % i == 0)
-            {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    static bool IsAnagram(int number)
-    {
-        string numStr = number.ToString();
-        char[] numChars = numStr.ToCharArray();
-        Array.Sort(numChars);
-        string sortedNumStr = new string(numChars);
-        return numStr.Equals(sortedNumStr);
-    }
-
-    static bool IsPalindrome(int number)
-    {
-        string numStr = number.ToString();
-        int left = 0;
-        int right = numStr.Length - 1;
-
-        while (left < right)
-        {
-            if (numStr[left] != numStr[right])
-            {
-                return false;
-            }
-            left++;
-            right--;
-        }
-
-        return true;
+        } while (choice != 0);
     }
 }
