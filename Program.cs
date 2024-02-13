@@ -102,14 +102,76 @@
             trav.Next = newNode;
         }
     }
+    public void DelFirst()
+    {
+        // special 1: if list is empty, throw exception
+        if (head == null)
+            throw new Exception("List is empty.");
 
+        // general: make head pointing to next node.
+        head = head.Next;
+        // note: the old first node will be garbage collected.
+    }
     public void DelAll()
     {
         head = null;
         // all nodes will be garbage collected
     }
+    public void DelAtPos(int pos)
+    {
+        // special 1: if pos = 1, delete first node
+        if (pos == 1)
+            DelFirst();
 
+        // special 2: if list is empty or pos < 1, then throw exception.
+        if (head == null || pos < 1)
+            throw new Exception("List is empty or Invalid position.");
 
+        // take temp pointer running behind trav.
+        Node temp = null, trav = head;
+
+        // traverse till pos (trav)
+        for (int i = 1; i < pos; i++)
+        {
+            // special 3: if pos is beyond list length, then throw exception.
+            if (trav == null)
+                throw new Exception("Invalid position.");
+            temp = trav;
+            trav = trav.Next;
+        }
+
+        // trav is node to be deleted & temp is node before that
+        temp.Next = trav.Next;
+        // trav node will be garbage collected
+    }
+
+    public void DelLast()
+    {
+        // special 1: if list is empty, throw exception
+        if (head == null)
+            throw new Exception("List is empty.");
+
+        // special 2: if list has single node, make head null.
+        if (head.Next == null)
+            head = null;
+
+        else
+        {
+            // general: delete the last node
+            Node temp = null, trav = head;
+
+            // traverse till last node (trav) and run temp behind it
+            while (trav.Next != null)
+            {
+                temp = trav;
+                trav = trav.Next;
+            }
+
+            // when last node (trav) is deleted, second last node (temp) next should be null.
+            temp.Next = null;
+            // last node (trav) will be garbage collected.
+        }
+    }
 }
 
 
@@ -157,6 +219,43 @@ public class Program
                     break;
 
 
+                case 5: // Del First
+                    try
+                    {
+                        list.DelFirst();
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    break;
+
+
+                case 6: // Del Last
+                    try
+                    {
+                        list.DelLast();
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    break;
+
+
+                case 7: // Del At Pos
+                    Console.Write("Enter element position: ");
+                    pos = int.Parse(Console.ReadLine());
+
+                    try
+                    {
+                        list.DelAtPos(pos);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    break;
 
 
                 case 8: // Del All
@@ -171,3 +270,4 @@ public class Program
 
     }
 }
+

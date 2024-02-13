@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataSturctureAlgorithmCsharp2024")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ffb9fe51537bf50b50696bec78dc414f94248e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e9e3741b791a92ce4564f5860fbcb3590c65ca6")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataSturctureAlgorithmCsharp2024")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataSturctureAlgorithmCsharp2024")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
